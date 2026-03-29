@@ -1,4 +1,17 @@
 #leaflet-map {
-  height: 100%;
+  height: calc(100% - 0px);
   width: 100%;
+  display: block;
+
+  ::ng-deep {
+    .leaflet-container {
+      height: 100%;
+      width: 100%;
+    }
+
+    .leaflet-tile-container img {
+      border: none;
+      border-radius: 0;
+    }
+  }
 }
